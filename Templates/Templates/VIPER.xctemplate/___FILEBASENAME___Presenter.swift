@@ -36,3 +36,7 @@ final class ___VARIABLE_moduleName___Presenter {
 extension ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___PresenterInput {
     
 }
+
+extension ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___InteractorOutput {
+    
+}
