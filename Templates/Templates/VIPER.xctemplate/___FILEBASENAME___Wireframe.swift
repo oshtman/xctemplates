@@ -16,13 +16,15 @@ protocol ___VARIABLE_moduleName___WireframeInput {
 
 final class ___VARIABLE_moduleName___Wireframe: BaseWireframe {
 
-        func prepare() -> UIViewController? {
+    static var identifier: String { return <#Initial ViewController name#> }
+
+    func prepare() -> UIViewController? {
         guard let view = UIStoryboard(name: <#Storyboard name#>, bundle: Bundle.main).instantiateViewController(withIdentifier: ___VARIABLE_moduleName___Wireframe.identifier) as? ___VARIABLE_moduleName___ViewController else { return nil } 
         configureModule(with: view)        
         return view
     }
 
-    func configureModule(with view: UIViewController) {
+    func configureModule(with view: ___VARIABLE_moduleName___PresenterOutput) {
 
         let interactor = ___VARIABLE_moduleName___Interactor()
         let dataManager = ___VARIABLE_moduleName___DataManager()
