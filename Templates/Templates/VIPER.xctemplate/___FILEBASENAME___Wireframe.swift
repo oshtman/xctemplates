@@ -24,7 +24,7 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframe {
         return view
     }
 
-    func configureModule(with view: ___VARIABLE_moduleName___PresenterOutput) {
+    func configureModule(with view: ___VARIABLE_moduleName___ViewController & ___VARIABLE_moduleName___PresenterOutput) {
 
         let interactor = ___VARIABLE_moduleName___Interactor()
         let dataManager = ___VARIABLE_moduleName___DataManager()
@@ -32,7 +32,7 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframe {
         
         // Wire stuff
         interactor.presenter = presenter
-        view?.presenter = presenter
+        view.presenter = presenter
         interactor.dataManager = dataManager
         dataManager.interactor = interactor
     }
