@@ -16,32 +16,23 @@ protocol ___VARIABLE_moduleName___WireframeInput {
 
 final class ___VARIABLE_moduleName___Wireframe: BaseWireframe {
 
-    static var identifier: String { return <#Initial ViewController name#> }
-
     func prepare() -> UIViewController? {
-        guard let view = UIStoryboard(name: <#Storyboard name#>, bundle: Bundle.main).instantiateViewController(withIdentifier: ___VARIABLE_moduleName___Wireframe.identifier) as? ___VARIABLE_moduleName___ViewController else { return nil } 
+        let view = ___VARIABLE_moduleName___ViewController() 
         configureModule(with: view)        
         return view
     }
 
     func configureModule(with view: ___VARIABLE_moduleName___ViewController & ___VARIABLE_moduleName___PresenterOutput) {
 
-        let interactor = ___VARIABLE_moduleName___Interactor()
-        let dataManager = ___VARIABLE_moduleName___DataManager()
-        let presenter = ___VARIABLE_moduleName___Presenter(wireframe: self, view: view, interactor: interactor)
-        
-        // Wire stuff
-        interactor.presenter = presenter
+        let presenter = ___VARIABLE_moduleName___Presenter(wireframe: self, view: view)
         view.presenter = presenter
-        interactor.dataManager = dataManager
-        dataManager.interactor = interactor
     }
     
-    func present(_ data: [String : Any]?, from source: BaseWireframe?)  {
+    override func present(_ data: [String : Any]?, from source: BaseWireframe?) throws {
         guard let view = prepare() else { return }
     }
     
-    func dismiss(_ view: Any?) {
+    override func dismiss(_ view: Any?) {
 
     }
 
