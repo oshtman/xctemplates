@@ -15,7 +15,7 @@
 		<string>public.swift-source</string>
 	</array>
 	<key>DefaultCompletionName</key>
-	<string>MyVPRModule</string>
+	<string>MyVIPERModule</string>
 	<key>Options</key>
 		<array>
 		<dict>
@@ -25,6 +25,8 @@
 			<string>moduleName</string>
 			<key>Name</key>
 			<string>New Module Name:</string>
+			<key>NotPersisted</key>
+			<true/>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
