@@ -30,7 +30,7 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframe {
     }
     
     override func present(_ data: [String : Any]?, from source: BaseWireframe?) throws {
-        guard let view = prepare() else { return }
+        guard let view = prepare() else { throw RoutingError.doesNotExist }
     }
     
     override func dismiss(_ view: Any?) {

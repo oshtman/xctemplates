@@ -12,7 +12,7 @@ import UIKit
 
 class ___VARIABLE_moduleName___ViewController: UIViewController {
 
-    private var presenter: ___VARIABLE_moduleName___PresenterInput!
+    var presenter: ___VARIABLE_moduleName___PresenterInput!
     
     override func viewDidLoad() {
         super.viewDidLoad()
