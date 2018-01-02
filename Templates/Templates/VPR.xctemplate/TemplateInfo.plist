@@ -14,6 +14,8 @@
 	<array>
 		<string>public.swift-source</string>
 	</array>
+	<key>DefaultCompletionName</key>
+	<string>MyVPRModule</string>
 	<key>Options</key>
 		<array>
 		<dict>
