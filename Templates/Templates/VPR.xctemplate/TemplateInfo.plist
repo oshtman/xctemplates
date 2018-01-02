@@ -14,8 +14,6 @@
 	<array>
 		<string>public.swift-source</string>
 	</array>
-	<key>DefaultCompletionName</key>
-	<string>___VARIABLE_moduleName___</string>
 	<key>Options</key>
 		<array>
 		<dict>
