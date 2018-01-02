@@ -9,6 +9,7 @@
 //
 
 import UIKit
+import Swace
 
 protocol ___VARIABLE_moduleName___WireframeInput {
 
