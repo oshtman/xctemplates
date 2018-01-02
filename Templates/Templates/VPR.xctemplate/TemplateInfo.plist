@@ -15,7 +15,7 @@
 		<string>public.swift-source</string>
 	</array>
 	<key>DefaultCompletionName</key>
-	<string>MyVIPERModule</string>
+	<string>MyModuleName</string>
 	<key>Options</key>
 		<array>
 		<dict>
