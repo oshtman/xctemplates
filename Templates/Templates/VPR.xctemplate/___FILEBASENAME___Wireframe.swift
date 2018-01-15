@@ -17,7 +17,7 @@ protocol ___VARIABLE_moduleName___WireframeInput {
 
 final class ___VARIABLE_moduleName___Wireframe: BaseWireframe {
 
-    func prepare() -> UIViewController? {
+    override func prepare(_ data: [String : Any]?) -> UIViewController? {
         let view = ___VARIABLE_moduleName___ViewController() 
         configureModule(with: view)        
         return view
