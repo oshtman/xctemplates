@@ -62,18 +62,14 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_moduleName___Wireframe</string>
-			<key>Description</key>
-			<string>The wireframe name</string>
+			<string>false</string>
 			<key>Identifier</key>
-			<string>wireframeName</string>
+			<string>withXIB</string>
 			<key>Name</key>
-			<string>Wireframe Name:</string>
-			<key>Required</key>
-			<true/>
+			<string>With XIB for user interface</string>
 			<key>Type</key>
-			<string>static</string>
-		</dict>
+			<string>checkbox</string>
+    	</dict>
 	</array>
 </dict>
 </plist>
