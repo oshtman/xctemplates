@@ -62,11 +62,25 @@
 		</dict>
 		<dict>
 			<key>Default</key>
+			<string>___VARIABLE_moduleName___Wireframe</string>
+			<key>Description</key>
+			<string>The wireframe name</string>
+			<key>Identifier</key>
+			<string>wireframeName</string>
+			<key>Name</key>
+			<string>Wireframe Name:</string>
+			<key>Required</key>
+			<true/>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
 			<string>false</string>
 			<key>Identifier</key>
-			<string>withXIB</string>
+			<string>useTexture</string>
 			<key>Name</key>
-			<string>With XIB for user interface</string>
+			<string>With ASViewController instead of UIViewController</string>
 			<key>Type</key>
 			<string>checkbox</string>
     	</dict>
