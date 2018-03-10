@@ -10,28 +10,14 @@
 
 import Foundation
 
-protocol ___VARIABLE_moduleName___PresenterInput: class {
-
-}
-
-protocol ___VARIABLE_moduleName___PresenterOutput: class {
-    
-}
-
 final class ___VARIABLE_moduleName___Presenter {
 
-    private weak var view: ___VARIABLE_moduleName___PresenterOutput?
-    private let wireframe: ___VARIABLE_moduleName___WireframeInput
+    private weak var view: ___VARIABLE_moduleName___Presenter?
+    private let wireframe: ___VARIABLE_moduleName___Wireframe
 
-    init(wireframe: ___VARIABLE_moduleName___WireframeInput, view: ___VARIABLE_moduleName___PresenterOutput) {
+    init(wireframe: ___VARIABLE_moduleName___Wireframe, view: ___VARIABLE_moduleName___Presenter) {
         self.wireframe = wireframe
         self.view = view
     }
 
-}
-
-//MARK: - Extensions
-
-extension ___VARIABLE_moduleName___Presenter: ___VARIABLE_moduleName___PresenterInput {
-    
 }

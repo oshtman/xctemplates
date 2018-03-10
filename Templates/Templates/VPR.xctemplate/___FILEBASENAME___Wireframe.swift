@@ -11,36 +11,22 @@
 import UIKit
 import Swace
 
-protocol ___VARIABLE_moduleName___WireframeInput {
-
-}
-
 final class ___VARIABLE_moduleName___Wireframe: BaseWireframe {
 
-    override func prepare(_ data: [String : Any]?) -> UIViewController? {
+    override func prepare(_ data: [String : Any] = [:]) throws -> UIViewController? {
         let view = ___VARIABLE_moduleName___ViewController() 
-        configureModule(with: view)        
+        let presenter = ___VARIABLE_moduleName___Presenter(wireframe: self, view: view)
+        view.presenter = presenter
         return view
     }
 
-    func configureModule(with view: ___VARIABLE_moduleName___ViewController & ___VARIABLE_moduleName___PresenterOutput) {
-
-        let presenter = ___VARIABLE_moduleName___Presenter(wireframe: self, view: view)
-        view.presenter = presenter
+    override func present(_ data: [String : Any] = [:], from source: BaseWireframe?) throws {
+        let view = prepare()
+        // The views has been prepared. This is a good place to wire up any transition delegates etc. 
     }
     
-    override func present(_ data: [String : Any]?, from source: BaseWireframe?) throws {
-        guard let view = prepare() else { throw RoutingError.doesNotExist }
-    }
-    
-    override func dismiss(_ view: Any?) {
-
+    override func dismiss(_ view: UIViewController?) {
+        // Perform any actions needed before dismissing the view here
     }
 
-}
-
-//MARK: - Extensions
-
-extension ___VARIABLE_moduleName___Wireframe: ___VARIABLE_moduleName___WireframeInput {
-    
 }
