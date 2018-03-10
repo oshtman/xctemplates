@@ -13,7 +13,7 @@ import Swace
 
 final class ___VARIABLE_moduleName___Wireframe: BaseWireframe {
 
-    override func prepare(_ data: [String : Any] = [:]) throws -> UIViewController? {
+    override func prepare(_ data: [String : Any] = [:]) throws -> UIViewController {
         let view = ___VARIABLE_moduleName___ViewController() 
         let presenter = ___VARIABLE_moduleName___Presenter(wireframe: self, view: view)
         view.presenter = presenter
@@ -21,7 +21,7 @@ final class ___VARIABLE_moduleName___Wireframe: BaseWireframe {
     }
 
     override func present(_ data: [String : Any] = [:], from source: BaseWireframe?) throws {
-        let view = prepare()
+        let view = try prepare()
         // The views has been prepared. This is a good place to wire up any transition delegates etc. 
     }
     

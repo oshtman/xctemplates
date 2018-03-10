@@ -12,10 +12,10 @@ import Foundation
 
 final class ___VARIABLE_moduleName___Presenter {
 
-    private weak var view: ___VARIABLE_moduleName___Presenter?
+    private weak var view: ___VARIABLE_moduleName___ViewController?
     private let wireframe: ___VARIABLE_moduleName___Wireframe
 
-    init(wireframe: ___VARIABLE_moduleName___Wireframe, view: ___VARIABLE_moduleName___Presenter) {
+    init(wireframe: ___VARIABLE_moduleName___Wireframe, view: ___VARIABLE_moduleName___ViewController) {
         self.wireframe = wireframe
         self.view = view
     }
