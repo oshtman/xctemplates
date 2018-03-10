@@ -74,7 +74,7 @@
 			<key>Type</key>
 			<string>static</string>
 		</dict>
-		<dict>
+		<!-- <dict>
 			<key>Default</key>
 			<string>false</string>
 			<key>Identifier</key>
@@ -83,7 +83,7 @@
 			<string>With ASViewController instead of UIViewController</string>
 			<key>Type</key>
 			<string>checkbox</string>
-    	</dict>
+    	</dict> -->
 	</array>
 </dict>
 </plist>
